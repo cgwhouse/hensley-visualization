@@ -1,10 +1,10 @@
 var nodes = new vis.DataSet([{
         id: 'danielMorganTechCenter',
-        label: 'Daniel Morgan Technology Center'
+        label: 'Daniel Morgan\nTechnology Center'
     },
     {
         id: 'spartanburgHS',
-        label: 'Spartanburg High School'
+        label: 'Spartanburg\nHigh School'
     },
     {
         id: 'broomeHS',
@@ -12,7 +12,7 @@ var nodes = new vis.DataSet([{
     },
     {
         id: 'spartanburgCC',
-        label: 'Spartanburg Community College'
+        label: 'Spartanburg\nCommunity College'
     },
     {
         id: 'students',
@@ -154,7 +154,10 @@ var data = {
 }
 
 var options = {
-    "physics": {
+    layout: {
+        randomSeed: 69
+    },
+    physics: {
         "forceAtlas2Based": {
             "springLength": 100,
             "avoidOverlap": .2
